@@ -25,3 +25,12 @@ export function requestReview(): Promise<void>;
  * cordova.plugins.AppReview.openStoreScreen(null, true);
  */
 export function openStoreScreen(packageName?: string, writeReview?: boolean): Promise<void>;
+/**
+ * Launches App/Play store page with a review form. By default current app screen
+ * is displayed but you can pass a package name string to show another app details.
+ * @example
+ * cordova.plugins.AppReview.getDeviceOSVersion();
+ * cordova.plugins.AppReview.getDeviceOSVersion("com.app.example");
+ * cordova.plugins.AppReview.getDeviceOSVersion(null, true);
+ */
+export function getDeviceOSVersion(): Promise<void>;
