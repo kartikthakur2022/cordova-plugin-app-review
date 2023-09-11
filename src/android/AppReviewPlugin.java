@@ -74,10 +74,10 @@ public class AppReviewPlugin extends ReflectiveCordovaPlugin {
      */
     public void handleError(String errorMsg, CallbackContext context){
         try {
-            logError(errorMsg);
+            // logError(errorMsg);
             context.error(errorMsg);
         } catch (Exception e) {
-            logError(e.toString());
+            // logError(e.toString());
         }
     }
 }
